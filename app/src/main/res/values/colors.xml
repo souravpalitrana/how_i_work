@@ -5,5 +5,6 @@
     <color name="colorAccent">#FF4081</color>
     <color name="colorBlack">#000</color>
     <color name="colorWhite">#fff</color>
-    <color name="colorTransparent">#10000000 </color>
+    <color name="colorTransparent">#40000000 </color>
+    <color name="colorTransparent1">#90000000 </color>
 </resources>
