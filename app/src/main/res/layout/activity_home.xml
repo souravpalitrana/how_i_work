@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_home_bg">
+        <ImageView
+            android:id="@+id/imageView_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_logo" />
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true">
+            <ImageButton
+                android:id="@+id/img_button_twitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/ic_button_twitter"
+                android:layout_alignParentRight="true" />
+            <ImageButton
+                android:id="@+id/img_button_facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:background="@drawable/ic_button_facebook"
+                android:layout_toLeftOf="@+id/img_button_twitter" />
+            <ImageButton
+                android:id="@+id/img_button_linkdin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_below="@+id/img_button_twitter"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/ic_button_linkedin"/>
+            <ImageButton
+                android:id="@+id/img_button_gplus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/img_button_linkdin"
+                android:layout_below="@id/img_button_facebook"
+                android:background="@drawable/ic_button_gplus"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
