@@ -14,7 +14,7 @@ public class MovingBackGround extends SurfaceView implements
 	public MovingBackGround(Context context) {
 		super(context);
 		backGround = BitmapFactory.decodeResource(context.getResources(),
-				R.drawable.looper_background);
+				R.drawable.ic_splash_categories);
 		setWillNotDraw(false);
 	}
 

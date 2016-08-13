@@ -11,25 +11,25 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageView imageView;
+    ImageView imageView_background;
     TextView textView_version;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //set background image animation
-        FrameLayout frame_back = (FrameLayout)findViewById(R.id.frame_back);
+        FrameLayout frame_back = (FrameLayout)findViewById(R.id.frame_background);
         frame_back.addView(new MovingBackGround(this),0);
 
         //set version image
-        imageView= (ImageView) findViewById(R.id.imageView);
+        imageView_background = (ImageView) findViewById(R.id.imageView);
         Runnable runnable = new Runnable() {
             @Override
             public void run() {
-                imageView.animate().rotationBy(360).withEndAction(this).setDuration(3000).setInterpolator(new LinearInterpolator()).start();
+                imageView_background.animate().rotationBy(360).withEndAction(this).setDuration(3000).setInterpolator(new LinearInterpolator()).start();
             }
         };
-        imageView.animate().rotationBy(360).withEndAction(runnable).setDuration(3000).setInterpolator(new LinearInterpolator()).start();
+        imageView_background.animate().rotationBy(360).withEndAction(runnable).setDuration(3000).setInterpolator(new LinearInterpolator()).start();
 
         //set current version
         textView_version = (TextView) findViewById(R.id.text_version);
