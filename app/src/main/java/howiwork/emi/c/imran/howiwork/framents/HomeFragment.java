@@ -1,5 +1,6 @@
 package howiwork.emi.c.imran.howiwork.framents;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -18,6 +19,8 @@ import com.daimajia.slider.library.Tricks.ViewPagerEx;
 import java.util.HashMap;
 
 import howiwork.emi.c.imran.howiwork.R;
+import howiwork.emi.c.imran.howiwork.activity.DetailActivity;
+import howiwork.emi.c.imran.howiwork.activity.MainActivity;
 
 
 public class HomeFragment extends Fragment{
@@ -64,7 +67,8 @@ public class HomeFragment extends Fragment{
                         @Override
                         public void onSliderClick(BaseSliderView slider) {
                             Toast.makeText(rootView.getContext(),slider.getBundle().get("extra") + "", Toast.LENGTH_SHORT).show();
-
+                            Intent ii = new Intent(rootView.getContext(),DetailActivity.class);
+                            startActivity(ii);
                         }
                     });
 
