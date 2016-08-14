@@ -40,21 +40,23 @@
         android:layout_height="wrap_content"
         android:text="SKIP"
         android:clickable="true"
-        android:textSize="@dimen/text_nano"
         android:background="@drawable/background_button"
         android:textStyle="bold"
+        android:minWidth="@dimen/button_min_width"
+        android:textSize="@dimen/text_large"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="@color/colorWhite"
         android:layout_gravity="right"/>
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="50dp"
         android:layout_gravity="bottom|left"
         android:src="@drawable/ic_aits_logo"/>
     <FrameLayout
         android:layout_width = "wrap_content"
         android:layout_height = "wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="50dp"
         android:layout_gravity="right|bottom"
         android:layout_alignParentRight="true"
         android:layout_centerInParent="true">
