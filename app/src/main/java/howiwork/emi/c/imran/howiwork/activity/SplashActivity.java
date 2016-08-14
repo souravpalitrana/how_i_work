@@ -1,4 +1,4 @@
-package howiwork.emi.c.imran.howiwork;
+package howiwork.emi.c.imran.howiwork.activity;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -12,6 +12,8 @@ import android.view.animation.TranslateAnimation;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import howiwork.emi.c.imran.howiwork.R;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -69,6 +71,7 @@ public class SplashActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent ii = new Intent(SplashActivity.this,MainActivity.class);
                 startActivity(ii);
+                finish();
             }
         });
 

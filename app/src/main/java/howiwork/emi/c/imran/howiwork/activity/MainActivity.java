@@ -1,4 +1,4 @@
-package howiwork.emi.c.imran.howiwork;
+package howiwork.emi.c.imran.howiwork.activity;
 
 
 import android.os.Bundle;
@@ -14,6 +14,7 @@ import android.view.WindowManager;
 import java.util.ArrayList;
 import java.util.List;
 
+import howiwork.emi.c.imran.howiwork.R;
 import howiwork.emi.c.imran.howiwork.framents.FiveFragment;
 import howiwork.emi.c.imran.howiwork.framents.FourFragment;
 import howiwork.emi.c.imran.howiwork.framents.HomeFragment;
@@ -97,6 +98,11 @@ public class MainActivity extends AppCompatActivity {
             // return null to display only the icon
             return null;
         }
-    }
 
+    }
+    @Override
+    public void onBackPressed() {
+        finish();
+        //super.onBackPressed();
+    }
 }
