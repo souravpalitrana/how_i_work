@@ -8,14 +8,13 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import howiwork.emi.c.imran.howiwork.framents.FiveFragment;
 import howiwork.emi.c.imran.howiwork.framents.FourFragment;
-import howiwork.emi.c.imran.howiwork.framents.OneFragment;
+import howiwork.emi.c.imran.howiwork.framents.HomeFragment;
 import howiwork.emi.c.imran.howiwork.framents.ThreeFragment;
 import howiwork.emi.c.imran.howiwork.framents.TwoFragment;
 
@@ -31,10 +30,10 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        viewPager = (ViewPager) findViewById(R.id.viewpager);
+        viewPager = (ViewPager) findViewById(R.id.tab_pager);
         setupViewPager(viewPager);
 
-        tabLayout = (TabLayout) findViewById(R.id.tabs);
+        tabLayout = (TabLayout) findViewById(R.id.tab_layout);
         tabLayout.setupWithViewPager(viewPager);
         setupTabIcons();
     }
@@ -57,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFrag(new OneFragment(), "ONE");
+        adapter.addFrag(new HomeFragment(), "ONE");
         adapter.addFrag(new TwoFragment(), "TWO");
         adapter.addFrag(new ThreeFragment(), "THREE");
         adapter.addFrag(new FourFragment(), "FOUR");
