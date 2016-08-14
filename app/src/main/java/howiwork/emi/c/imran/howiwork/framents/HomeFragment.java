@@ -45,7 +45,8 @@ public class HomeFragment extends Fragment{
         file_maps.put("Slide 2",R.drawable.ic_slider2);
         file_maps.put("Slide 3",R.drawable.ic_slider3);
         file_maps.put("Slide 4", R.drawable.ic_slider4);
-        
+
+        //set image slider action
         slideImageAction(rootView);
         
         return rootView;
@@ -74,7 +75,7 @@ public class HomeFragment extends Fragment{
 
             sliderLayout_image.addSlider(textSliderView);
         }
-        sliderLayout_image.setPresetTransformer(SliderLayout.Transformer.Accordion);
+        sliderLayout_image.setPresetTransformer(SliderLayout.Transformer.Stack);
         sliderLayout_image.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
         sliderLayout_image.setCustomAnimation(new DescriptionAnimation());
         sliderLayout_image.setDuration(4000);

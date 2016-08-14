@@ -34,7 +34,7 @@ public class SplashActivity extends AppCompatActivity {
                 TranslateAnimation.ABSOLUTE, 0f,
                 TranslateAnimation.RELATIVE_TO_PARENT, 0f,
                 TranslateAnimation.RELATIVE_TO_PARENT, -1f);
-        mAnimation.setDuration(10000);
+        mAnimation.setDuration(20000);
         mAnimation.setRepeatCount(-1);
         mAnimation.setRepeatMode(Animation.INFINITE);
         mAnimation.setInterpolator(new LinearInterpolator());
@@ -47,7 +47,7 @@ public class SplashActivity extends AppCompatActivity {
                 TranslateAnimation.ABSOLUTE, 0f,
                 TranslateAnimation.RELATIVE_TO_SELF, 1f,
                 TranslateAnimation.RELATIVE_TO_SELF, 0f);
-        mAnimation1.setDuration(10000);
+        mAnimation1.setDuration(20000);
         mAnimation1.setRepeatCount(-1);
         mAnimation1.setRepeatMode(Animation.INFINITE);
         mAnimation1.setInterpolator(new LinearInterpolator());
