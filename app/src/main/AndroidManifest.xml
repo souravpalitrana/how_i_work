@@ -18,6 +18,10 @@
             android:name=".activity.MainActivity"
             android:theme="@style/MyMaterialTheme" >
         </activity>
+        <activity
+            android:name=".activity.DetailActivity"
+            android:theme="@style/MyMaterialTheme" >
+        </activity>
     </application>
 
 </manifest>
