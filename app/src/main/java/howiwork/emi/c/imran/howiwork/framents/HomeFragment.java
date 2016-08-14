@@ -3,6 +3,7 @@ package howiwork.emi.c.imran.howiwork.framents;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -62,6 +63,7 @@ public class HomeFragment extends Fragment{
                         @Override
                         public void onSliderClick(BaseSliderView slider) {
                             Toast.makeText(rootView.getContext(),slider.getBundle().get("extra") + "", Toast.LENGTH_SHORT).show();
+
                         }
                     });
 
